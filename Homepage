@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>PS Construction INC - Home</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">PS Construction INC</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="booking.html">Book Now</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Building Excellence, Delivering Quality</h1>
+                <p>Professional Construction & Real Estate Services</p>
+                <a href="booking.html" class="cta-button">Book a Service</a>
+            </div>
+        </section>
+
+        <!-- Services Overview -->
+        <section class="services-overview">
+            <h2>Our Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>General Construction</h3>
+                    <p>Complete construction solutions for residential and commercial projects</p>
+                </div>
+                <div class="service-card">
+                    <h3>Renovations</h3>
+                    <p>Transform your space with professional renovation services</p>
+                </div>
+                <div class="service-card">
+                    <h3>Consultancy</h3>
+                    <p>Expert advice for your construction and development projects</p>
+                </div>
+                <div class="service-card">
+                    <h3>Real Estate</h3>
+                    <p>Comprehensive real estate solutions and property management</p>
+                </div>
+                <div class="service-card">
+                    <h3>Facilities Management</h3>
+                    <p>Professional maintenance and management of facilities</p>
+                </div>
+                <div class="service-card">
+                    <h3>Project Management</h3>
+                    <p>Expert project management and quantity surveying services</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Preview -->
+        <section class="about-preview">
+            <h2>Why Choose Us?</h2>
+            <div class="why-choose-grid">
+                <div class="why-card">
+                    <h3>10+ Years Experience</h3>
+                    <p>Decades of excellence in construction and real estate</p>
+                </div>
+                <div class="why-card">
+                    <h3>Expert Team</h3>
+                    <p>Highly qualified professionals dedicated to your success</p>
+                </div>
+                <div class="why-card">
+                    <h3>Quality Assured</h3>
+                    <p>Commitment to highest standards in every project</p>
+                </div>
+                <div class="why-card">
+                    <h3>On-Time Delivery</h3>
+                    <p>Projects completed on schedule and within budget</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-section">
+            <h2>Ready to Start Your Project?</h2>
+            <p>Get in touch with us today for a free consultation</p>
+            <a href="booking.html" class="cta-button-secondary">Book a Consultation</a>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>PS Construction INC</h4>
+                <p>Your trusted partner in construction and real estate</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact Info</h4>
+                <p>Email: info@psconstruction.com</p>
+                <p>Phone: +1 (555) 123-4567</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 PS Construction INC. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="firebase-config.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
