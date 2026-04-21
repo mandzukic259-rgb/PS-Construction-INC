@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Contact Us - PS Construction INC</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">PS Construction INC</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="booking.html">Book Now</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Page Header -->
+        <section class="page-header">
+            <h1>Contact Us</h1>
+            <p>Get in Touch With PS Construction INC</p>
+        </section>
+
+        <!-- Contact Content -->
+        <section class="contact-section">
+            <div class="contact-container">
+                <!-- Contact Info -->
+                <div class="contact-info">
+                    <h2>Contact Information</h2>
+                    
+                    <div class="contact-item">
+                        <h3>📍 Address</h3>
+                        <p>123 Construction Avenue</p>
+                        <p>Building City, BC 12345</p>
+                        <p>Country</p>
+                    </div>
+
+                    <div class="contact-item">
+                        <h3>📞 Phone</h3>
+                        <p><a href="tel:+15551234567">+1 (555) 123-4567</a></p>
+                        <p><a href="tel:+15559876543">+1 (555) 987-6543</a></p>
+                    </div>
+
+                    <div class="contact-item">
+                        <h3>✉️ Email</h3>
+                        <p><a href="mailto:info@psconstruction.com">info@psconstruction.com</a></p>
+                        <p><a href="mailto:support@psconstruction.com">support@psconstruction.com</a></p>
+                    </div>
+
+                    <div class="contact-item">
+                        <h3>⏰ Business Hours</h3>
+                        <p>Monday - Friday: 8:00 AM - 6:00 PM</p>
+                        <p>Saturday: 9:00 AM - 4:00 PM</p>
+                        <p>Sunday: Closed</p>
+                    </div>
+
+                    <div class="contact-item">
+                        <h3>🔗 Follow Us</h3>
+                        <div class="social-links">
+                            <a href="#" class="social-icon">Facebook</a>
+                            <a href="#" class="social-icon">LinkedIn</a>
+                            <a href="#" class="social-icon">Twitter</a>
+                            <a href="#" class="social-icon">Instagram</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact-form-container">
+                    <h2>Send us a Message</h2>
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-group">
+                            <label for="contactName">Full Name:</label>
+                            <input type="text" id="contactName" name="contactName" placeholder="Your full name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contactEmail">Email Address:</label>
+                            <input type="email" id="contactEmail" name="contactEmail" placeholder="Your email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contactPhone">Phone Number:</label>
+                            <input type="tel" id="contactPhone" name="contactPhone" placeholder="Your phone number">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contactSubject">Subject:</label>
+                            <input type="text" id="contactSubject" name="contactSubject" placeholder="Message subject" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contactMessage">Message:</label>
+                            <textarea id="contactMessage" name="contactMessage" placeholder="Your message" rows="6" required></textarea>
+                        </div>
+
+                        <div class="form-group checkbox">
+                            <label>
+                                <input type="checkbox" id="contactAgree" name="contactAgree" required>
+                                I agree to be contacted about my inquiry
+                            </label>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                        <p id="contactMessage" class="form-message"></p>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Map Section -->
+        <section class="map-section">
+            <h2>Find Us</h2>
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.1234567890123!2d-74.0059!3d40.7128!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDDCsDQyJzQ2LjEiTiA3NMKwMDAnMjEuMyJX!5e0!3m2!1sen!2sus!4v1234567890123" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="cta-section">
+            <h2>Ready to Discuss Your Project?</h2>
+            <p>Contact us today for a free consultation</p>
+            <a href="booking.html" class="cta-button-secondary">Book Now</a>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>PS Construction INC</h4>
+                <p>Your trusted partner in construction and real estate</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact Info</h4>
+                <p>Email: info@psconstruction.com</p>
+                <p>Phone: +1 (555) 123-4567</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 PS Construction INC. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="firebase-config.js"></script>
+    <script src="app.js"></script>
+    <script src="contact.js"></script>
+</body>
+</html>
