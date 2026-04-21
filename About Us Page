@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>About Us - PS Construction INC</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">PS Construction INC</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="booking.html">Book Now</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Page Header -->
+        <section class="page-header">
+            <h1>About PS Construction INC</h1>
+            <p>Your Partner in Building Excellence</p>
+        </section>
+
+        <!-- Company Overview -->
+        <section class="company-overview">
+            <h2>Who We Are</h2>
+            <p>PS Construction INC is a leading construction and real estate firm with over a decade of experience in delivering exceptional projects. We specialize in general construction, renovations, consultancy, real estate services, facilities management, and project management.</p>
+            <p>Our commitment to quality, innovation, and customer satisfaction has made us the preferred choice for residential, commercial, and industrial projects.</p>
+        </section>
+
+        <!-- Mission, Vision, Values -->
+        <section class="mvv">
+            <div class="mvv-card">
+                <h3>Our Mission</h3>
+                <p>To deliver outstanding construction and real estate solutions that exceed client expectations through quality workmanship, professional service, and innovative approaches.</p>
+            </div>
+            <div class="mvv-card">
+                <h3>Our Vision</h3>
+                <p>To be the most trusted and reliable construction and real estate partner in the region, known for excellence, integrity, and sustainable development.</p>
+            </div>
+            <div class="mvv-card">
+                <h3>Our Values</h3>
+                <ul>
+                    <li>Integrity & Transparency</li>
+                    <li>Quality & Excellence</li>
+                    <li>Customer Focus</li>
+                    <li>Innovation & Efficiency</li>
+                    <li>Sustainability</li>
+                    <li>Team Collaboration</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Team Section -->
+        <section class="team">
+            <h2>Our Leadership Team</h2>
+            <div class="team-grid">
+                <div class="team-member">
+                    <div class="member-avatar">👨‍💼</div>
+                    <h3>John Smith</h3>
+                    <p>CEO & Founder</p>
+                    <p class="bio">20+ years in construction management and project leadership</p>
+                </div>
+                <div class="team-member">
+                    <div class="member-avatar">👨‍🏫</div>
+                    <h3>Michael Johnson</h3>
+                    <p>Chief Project Manager</p>
+                    <p class="bio">Expert in project planning and execution</p>
+                </div>
+                <div class="team-member">
+                    <div class="member-avatar">👩‍💼</div>
+                    <h3>Sarah Williams</h3>
+                    <p>Head of Real Estate</p>
+                    <p class="bio">Specialized in property development and management</p>
+                </div>
+                <div class="team-member">
+                    <div class="member-avatar">👨‍🔧</div>
+                    <h3>David Brown</h3>
+                    <p>Head of Operations</p>
+                    <p class="bio">Ensures smooth execution of all projects</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Statistics -->
+        <section class="stats">
+            <h2>Our Track Record</h2>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <h3>150+</h3>
+                    <p>Projects Completed</p>
+                </div>
+                <div class="stat-card">
+                    <h3>500+</h3>
+                    <p>Happy Clients</p>
+                </div>
+                <div class="stat-card">
+                    <h3>10+</h3>
+                    <p>Years Experience</p>
+                </div>
+                <div class="stat-card">
+                    <h3>98%</h3>
+                    <p>Client Satisfaction</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="cta-section">
+            <h2>Ready to Work With Us?</h2>
+            <p>Contact us today to discuss your project needs</p>
+            <a href="booking.html" class="cta-button-secondary">Get Started</a>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>PS Construction INC</h4>
+                <p>Your trusted partner in construction and real estate</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact Info</h4>
+                <p>Email: info@psconstruction.com</p>
+                <p>Phone: +1 (555) 123-4567</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 PS Construction INC. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="firebase-config.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
