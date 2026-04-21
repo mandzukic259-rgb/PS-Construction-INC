@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Portfolio - PS Construction INC</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">PS Construction INC</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="booking.html">Book Now</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Page Header -->
+        <section class="page-header">
+            <h1>Our Portfolio</h1>
+            <p>Showcase of Our Completed Projects</p>
+        </section>
+
+        <!-- Portfolio Section -->
+        <section class="portfolio">
+            <div class="portfolio-intro">
+                <h2>Featured Projects</h2>
+                <p>Explore our collection of successfully completed construction and real estate projects. Each project reflects our commitment to quality, innovation, and client satisfaction.</p>
+            </div>
+
+            <div class="portfolio-grid" id="portfolioGrid">
+                <!-- Projects will be added here -->
+                <div class="portfolio-placeholder">
+                    <p>Projects coming soon! We're building an impressive portfolio of completed work.</p>
+                </div>
+            </div>
+
+            <!-- Add Project Form (Admin Only) -->
+            <div class="add-project-section" id="addProjectSection" style="display: none;">
+                <h3>Add New Project</h3>
+                <form id="addProjectForm">
+                    <input type="text" id="projectName" placeholder="Project Name" required>
+                    <textarea id="projectDescription" placeholder="Project Description" required></textarea>
+                    <input type="text" id="projectCategory" placeholder="Category (General Construction, Renovation, etc.)" required>
+                    <input type="text" id="projectImage" placeholder="Image URL" required>
+                    <input type="date" id="projectDate" required>
+                    <button type="submit" class="btn">Add Project</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- Statistics -->
+        <section class="portfolio-stats">
+            <h2>Our Achievements</h2>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <h3 id="projectCount">150+</h3>
+                    <p>Projects Completed</p>
+                </div>
+                <div class="stat-card">
+                    <h3 id="clientCount">500+</h3>
+                    <p>Satisfied Clients</p>
+                </div>
+                <div class="stat-card">
+                    <h3>10+</h3>
+                    <p>Years of Excellence</p>
+                </div>
+                <div class="stat-card">
+                    <h3>98%</h3>
+                    <p>Client Satisfaction Rate</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="cta-section">
+            <h2>Ready to Start Your Project?</h2>
+            <p>Let's turn your vision into reality</p>
+            <a href="booking.html" class="cta-button-secondary">Book a Service</a>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>PS Construction INC</h4>
+                <p>Your trusted partner in construction and real estate</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact Info</h4>
+                <p>Email: info@psconstruction.com</p>
+                <p>Phone: +1 (555) 123-4567</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 PS Construction INC. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="firebase-config.js"></script>
+    <script src="app.js"></script>
+    <script src="portfolio.js"></script>
+</body>
+</html>
