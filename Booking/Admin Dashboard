@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Admin Dashboard - PS Construction INC</title>
+</head>
+<body>
+    <div class="admin-container">
+        <!-- Login Section -->
+        <div id="loginSection" class="login-section">
+            <div class="login-box">
+                <h1>Admin Dashboard</h1>
+                <h2>Login</h2>
+                <form id="loginForm">
+                    <div class="form-group">
+                        <label for="adminEmail">Email:</label>
+                        <input type="email" id="adminEmail" name="adminEmail" placeholder="Enter admin email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="adminPassword">Password:</label>
+                        <input type="password" id="adminPassword" name="adminPassword" placeholder="Enter password" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Login</button>
+                    <p id="loginError" class="error-message"></p>
+                </form>
+            </div>
+        </div>
+
+        <!-- Dashboard Section -->
+        <div id="dashboardSection" class="admin-dashboard" style="display: none;">
+            <!-- Header -->
+            <header class="admin-header">
+                <h1>Admin Dashboard</h1>
+                <div class="admin-user-info">
+                    <span id="adminUserEmail"></span>
+                    <button id="logoutBtn" class="btn btn-danger">Logout</button>
+                </div>
+            </header>
+
+            <!-- Sidebar Navigation -->
+            <nav class="admin-sidebar">
+                <ul>
+                    <li><a href="#" onclick="showTab('overview')" class="nav-link active">Overview</a></li>
+                    <li><a href="#" onclick="showTab('bookings')" class="nav-link">Bookings</a></li>
+                    <li><a href="#" onclick="showTab('messages')" class="nav-link">Messages</a></li>
+                    <li><a href="#" onclick="showTab('analytics')" class="nav-link">Analytics</a></li>
+                </ul>
+            </nav>
+
+            <!-- Main Content -->
+            <main class="admin-content">
+                <!-- Overview Tab -->
+                <div id="overview" class="tab-content active">
+                    <h2>Dashboard Overview</h2>
+                    <div class="stats-overview">
+                        <div class="stat-box">
+                            <h3>Total Bookings</h3>
+                            <p id="totalBookings" class="stat-number">0</p>
+                        </div>
+                        <div class="stat-box">
+                            <h3>Pending Bookings</h3>
+                            <p id="pendingBookings" class="stat-number">0</p>
+                        </div>
+                        <div class="stat-box">
+                            <h3>Total Messages</h3>
+                            <p id="totalMessages" class="stat-number">0</p>
+                        </div>
+                        <div class="stat-box">
+                            <h3>Unread Messages</h3>
+                            <p id="unreadMessages" class="stat-number">0</p>
+                        </div>
+                    </div>
+
+                    <div class="recent-activity">
+                        <h3>Recent Bookings</h3>
+                        <table class="activity-table">
+                            <thead>
+                                <tr>
+                                    <th>Date</th>
+                                    <th>Client</th>
+                                    <th>Type</th>
+                                    <th>Service</th>
+                                    <th>Status</th>
+                                </tr>
+                            </thead>
+                            <tbody id="recentBookingsTable">
+                                <tr>
+                                    <td colspan="5">No bookings yet</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- Bookings Tab -->
+                <div id="bookings" class="tab-content">
+                    <h2>Manage Bookings</h2>
+                    
+                    <div class="filter-section">
+                        <input type="text" id="bookingSearch" placeholder="Search bookings..." class="search-box">
+                        <select id="bookingFilterStatus" class="filter-select">
+                            <option value="">All Status</option>
+                            <option value="Pending">Pending</option>
+                            <option value="Confirmed">Confirmed</option>
+                            <option value="Completed">Completed</option>
+                        </select>
+                    </div>
+
+                    <table class="bookings-table">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Date</th>
+                                <th>Client Name</th>
+                                <th>Email</th>
+                                <th>Phone</th>
+                                <th>Service Type</th>
+                                <th>Service Category</th>
+                                <th>Status</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody id="bookingsTableBody">
+                            <tr>
+                                <td colspan="9">Loading bookings...</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Messages Tab -->
+                <div id="messages" class="tab-content">
+                    <h2>Manage Messages</h2>
+                    
+                    <div class="filter-section">
+                        <input type="text" id="messageSearch" placeholder="Search messages..." class="search-box">
+                        <select id="messageFilterStatus" class="filter-select">
+                            <option value="">All Messages</option>
+                            <option value="read">Read</option>
+                            <option value="unread">Unread</option>
+                        </select>
+                    </div>
+
+                    <table class="messages-table">
+                        <thead>
+                            <tr>
+                                <th>Date</th>
+                                <th>From</th>
+                                <th>Email</th>
+                                <th>Subject</th>
+                                <th>Message</th>
+                                <th>Status</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody id="messagesTableBody">
+                            <tr>
+                                <td colspan="7">Loading messages...</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Analytics Tab -->
+                <div id="analytics" class="tab-content">
+                    <h2>Analytics</h2>
+                    <div class="analytics-grid">
+                        <div class="analytics-card">
+                            <h3>Booking Types Distribution</h3>
+                            <div id="bookingTypesChart" class="chart-placeholder">
+                                <p>Chart will display here</p>
+                            </div>
+                        </div>
+                        <div class="analytics-card">
+                            <h3>Service Categories Distribution</h3>
+                            <div id="serviceCategoriesChart" class="chart-placeholder">
+                                <p>Chart will display here</p>
+                            </div>
+                        </div>
+                        <div class="analytics-card">
+                            <h3>Bookings Over Time</h3>
+                            <div id="bookingsTimeChart" class="chart-placeholder">
+                                <p>Chart will display here</p>
+                            </div>
+                        </div>
+                        <div class="analytics-card">
+                            <h3>Statistics</h3>
+                            <ul>
+                                <li>Average Bookings per Day: <span id="avgBookingsPerDay">0</span></li>
+                                <li>Most Popular Service: <span id="mostPopularService">N/A</span></li>
+                                <li>Most Used Booking Type: <span id="mostUsedBookingType">N/A</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+
+        <!-- Booking Detail Modal -->
+        <div id="bookingModal" class="modal" style="display: none;">
+            <div class="modal-content">
+                <span class="close" onclick="closeBookingModal()">&times;</span>
+                <h2>Booking Details</h2>
+                <div id="bookingDetails" class="modal-body"></div>
+                <div class="modal-actions">
+                    <button onclick="markBookingAsConfirmed()" class="btn btn-success">Mark as Confirmed</button>
+                    <button onclick="markBookingAsCompleted()" class="btn btn-info">Mark as Completed</button>
+                    <button onclick="deleteBooking()" class="btn btn-danger">Delete</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Message Detail Modal -->
+        <div id="messageModal" class="modal" style="display: none;">
+            <div class="modal-content">
+                <span class="close" onclick="closeMessageModal()">&times;</span>
+                <h2>Message Details</h2>
+                <div id="messageDetails" class="modal-body"></div>
+                <div class="modal-actions">
+                    <button onclick="deleteMessage()" class="btn btn-danger">Delete</button>
+                    <button onclick="closeMessageModal()" class="btn">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="firebase-config.js"></script>
+    <script src="admin.js"></script>
+</body>
+</html>
