@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Services - PS Construction INC</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">PS Construction INC</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="booking.html">Book Now</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Page Header -->
+        <section class="page-header">
+            <h1>Our Services</h1>
+            <p>Comprehensive Construction & Real Estate Solutions</p>
+        </section>
+
+        <!-- Services Details -->
+        <section class="services-detailed">
+            <!-- Service 1 -->
+            <div class="service-detail">
+                <div class="service-icon">🏗️</div>
+                <h2>General Construction</h2>
+                <p>From ground-up construction to structural modifications, we handle all aspects of general construction with precision and expertise.</p>
+                <h4>What We Include:</h4>
+                <ul>
+                    <li>Residential construction</li>
+                    <li>Commercial construction</li>
+                    <li>Industrial construction</li>
+                    <li>Infrastructure projects</li>
+                    <li>Custom building solutions</li>
+                </ul>
+                <a href="booking.html" class="service-link">Request a Quote</a>
+            </div>
+
+            <!-- Service 2 -->
+            <div class="service-detail">
+                <div class="service-icon">🔨</div>
+                <h2>Renovations & Remodeling</h2>
+                <p>Transform your existing space with our professional renovation services. We bring new life to old structures.</p>
+                <h4>What We Include:</h4>
+                <ul>
+                    <li>Interior renovations</li>
+                    <li>Exterior remodeling</li>
+                    <li>Kitchen & bathroom upgrades</li>
+                    <li>Structural modifications</li>
+                    <li>Modern design integration</li>
+                </ul>
+                <a href="booking.html" class="service-link">Request a Quote</a>
+            </div>
+
+            <!-- Service 3 -->
+            <div class="service-detail">
+                <div class="service-icon">💼</div>
+                <h2>Consultancy Services</h2>
+                <p>Expert advice and guidance for your construction and development projects from conception to completion.</p>
+                <h4>What We Include:</h4>
+                <ul>
+                    <li>Project planning & feasibility studies</li>
+                    <li>Design consultation</li>
+                    <li>Budget planning</li>
+                    <li>Risk assessment</li>
+                    <li>Regulatory compliance advice</li>
+                </ul>
+                <a href="booking.html" class="service-link">Book a Consultation</a>
+            </div>
+
+            <!-- Service 4 -->
+            <div class="service-detail">
+                <div class="service-icon">🏠</div>
+                <h2>Real Estate Services</h2>
+                <p>Comprehensive real estate solutions including property development, sales, and management.</p>
+                <h4>What We Include:</h4>
+                <ul>
+                    <li>Property development</li>
+                    <li>Investment property acquisition</li>
+                    <li>Property management</li>
+                    <li>Lease negotiations</li>
+                    <li>Market analysis & advisory</li>
+                </ul>
+                <a href="booking.html" class="service-link">Request Information</a>
+            </div>
+
+            <!-- Service 5 -->
+            <div class="service-detail">
+                <div class="service-icon">🛠️</div>
+                <h2>Facilities Maintenance & Management</h2>
+                <p>Keep your facilities running smoothly with our comprehensive maintenance and management services.</p>
+                <h4>What We Include:</h4>
+                <ul>
+                    <li>Preventive maintenance</li>
+                    <li>Emergency repairs</li>
+                    <li>Building inspections</li>
+                    <li>Pest control & sanitation</li>
+                    <li>24/7 support services</li>
+                </ul>
+                <a href="booking.html" class="service-link">Get a Free Assessment</a>
+            </div>
+
+            <!-- Service 6 -->
+            <div class="service-detail">
+                <div class="service-icon">📊</div>
+                <h2>Quantity Surveying & Project Management</h2>
+                <p>Professional project management and quantity surveying to ensure cost control and timely delivery.</p>
+                <h4>What We Include:</h4>
+                <ul>
+                    <li>Project planning & scheduling</li>
+                    <li>Cost estimation & control</li>
+                    <li>Resource management</li>
+                    <li>Progress monitoring</li>
+                    <li>Quality assurance</li>
+                </ul>
+                <a href="booking.html" class="service-link">Schedule a Site Visit</a>
+            </div>
+        </section>
+
+        <!-- Process Section -->
+        <section class="process">
+            <h2>Our Working Process</h2>
+            <div class="process-steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Consultation</h3>
+                    <p>Initial meeting to understand your needs and requirements</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>Planning</h3>
+                    <p>Develop comprehensive project plan and budget</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Execution</h3>
+                    <p>Professional implementation with quality oversight</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <h3>Completion</h3>
+                    <p>Final inspection and handover of project</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="cta-section">
+            <h2>Need Our Services?</h2>
+            <p>Contact us today for a free consultation and quote</p>
+            <a href="booking.html" class="cta-button-secondary">Book Now</a>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>PS Construction INC</h4>
+                <p>Your trusted partner in construction and real estate</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact Info</h4>
+                <p>Email: info@psconstruction.com</p>
+                <p>Phone: +1 (555) 123-4567</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 PS Construction INC. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="firebase-config.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
